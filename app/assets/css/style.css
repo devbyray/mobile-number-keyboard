@@ -15,14 +15,36 @@
 
 html {
   font-size: 62.5%;
-  background: -webkit-radial-gradient(center, ellipse, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%);
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  background: #f2f2f2; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   -webkit-transition: all 0.4s 0.3s ease-in;
           transition: all 0.4s 0.3s ease-in; }
+
+.full {
+  width: 100%;
+  background: #fff;
+  max-width: 1024px;
+  padding: 2rem;
+  position: relative;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
+
+.row {
+  margin-bottom: 1.6rem; }
+  .row span {
+    display: block;
+    width: 100%; }
+  .row input {
+    width: 100%;
+    display: block;
+    line-height: 1.8;
+    padding: 1rem;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
 
 .logo {
   margin: -58px 0 0 -100px;
