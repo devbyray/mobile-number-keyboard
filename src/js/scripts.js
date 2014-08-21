@@ -31,10 +31,8 @@
 			console.log('deviceOS: ', deviceOS());
 			for(var i in input){
 			    if(input[i].type === 'number'){
-			        if() {
-			        	input[i].type = 'tel';
-			        	console.log(input[i], 'Changed to tel');
-			        }
+		        	input[i].type = 'tel';
+		        	console.log(input[i], 'Changed to tel');
 			    }
 			}
 		}
