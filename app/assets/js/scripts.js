@@ -56,13 +56,6 @@
 		        	console.log(input[i], 'Changed to tel');
 			    }
 			}
-		} else if(deviceOS() === 'android 4.4.4') {
-			for(var i in input){
-			    if(input[i].type === 'tel'){
-		        	input[i].type = 'number';
-		        	console.log(input[i], 'Changed to number');
-			    }
-			}
 		}
 	}
 
