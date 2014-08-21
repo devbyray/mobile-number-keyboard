@@ -33,8 +33,12 @@ body {
 		line-height: 1.8;
 		padding: 1rem;
 		box-sizing: border-box;
+		color: #fff;
 		&[type="tel"] {
 			background-color: green;
+		}
+		&[type="number"] {
+			background-color: red;
 		}
 	}
 }
