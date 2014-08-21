@@ -10,8 +10,9 @@
 
 	'use strict';
 
+	var useragent = navigator.userAgent;
+
 	function deviceOS() {
-		var useragent = navigator.userAgent;
 		if(useragent.match(/Android/i)) {
 			return 'android';
 		} else if(useragent.match(/webOS/i)) {
@@ -33,6 +34,22 @@
 		}
 	}
 
+	var androidTypes = {
+		number : [
+			"2.3", "2.3", "2.3"
+		],
+		tel : [
+			"2.3", "2.3", "2.3"
+		]
+	}
+
+	var paragraph = document.createElement("p");
+	var txtnode = document.createTextNode(useragent);
+	paragraph.appendChild(txtnode);
+
+	var element = document.getElementById("useragent");
+	element.appendChild(paragraph);
+
 	function setRightInputKeyboard() {
 		var input = document.getElementsByTagName('input');
 		if(deviceOS() === 'iphone' || deviceOS() === 'ipod' || deviceOS() === 'ipad') {
@@ -45,6 +62,9 @@
 			}
 		}
 	}
+
+
+	console.log(androidTypes);
 
 	setRightInputKeyboard();
 
