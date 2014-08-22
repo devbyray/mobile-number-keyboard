@@ -10,6 +10,15 @@
 
 	'use strict';
 
+	// androidTypes: {
+	// 	numberKeyboard : [
+	// 		"4.2.2", "4.4.4", "4.4.2", "2.3.3"
+	// 	],
+	// 	telKeyboard : [
+	// 		"4.1.2"
+	// 	]
+	// }
+
 	var useragent = navigator.userAgent;
 
 	function deviceOS() {
@@ -26,15 +35,6 @@
 		} else {
 			return 'no-device';
 		}
-	}
-
-	var androidTypes = {
-		number : [
-			"4.2.2", "4.4.4", "4.4.2", "2.3.3"
-		],
-		tel : [
-			"4.1.2"
-		]
 	}
 
 	var paragraph = document.createElement("p");
@@ -65,9 +65,6 @@
 			}
 		}
 	}
-
-
-	console.log(androidTypes);
 
 	setRightInputKeyboard();
 
