@@ -28,7 +28,7 @@
 			return 'no-device';
 		}
 	}
-
+	
 	var paragraph = document.createElement("p");
 	var txtnode = document.createTextNode(useragent);
 	paragraph.appendChild(txtnode);
